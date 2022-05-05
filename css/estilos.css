@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* INDEX */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #CA431D;
+}
+
+.header__logo {
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header__navegacion{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: #520556;  
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.presentacion__titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #520556;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.presentacion__subtitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    color: #CA431D;
+    padding: 40px;
+}
+
+.presentacion__boton {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color:#EDEDED;
+    background-color: #CA431D;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-left: 400px;
+}
+
+.presentacion__imagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+
+footer {
+    background-color: #520556;
+}
+
+.footer__imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.footer__derechos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* PAGINA CONTACTO */
+
+.main__formulario{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color:white;
+    border-color: #CA431D;
+    border-style:double;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.main__titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: #520556;
+    padding: 10px;
+    margin: 30px;
+}
+
+.main__formularioNombre{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-top: 10px;
+    width: 300px;
+}
+
+.main__formularioApellido{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-top: 10px;
+    width: 300px;
+}
+
+.main__formularioEmail{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-top: 5px;
+    width: 300px;
+}
+
+.main__formularioMensaje{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-bottom: 120px;
+    width: 300px;
+}
+
+.main__formilarioEnviar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #EDEDED;
+    background-color: #520556;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.main__whatsapp{
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    color:#CA431D;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* PAGINA NOSOTRAS */
+
+.nosotras{
+    text-align: center;
+    background-image: url("../recursos/Nosotrass.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.nosotras__titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #520556;
+    margin-top: 50px;
+}
+
+.nosotras__parrafo{
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #CA431D;
+    margin-top: 20px;
+}
+
+/* .nosotras__imagen{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+} */
+
+/* PAGINA PRODUCTOS */
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:#520556;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.boton{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #520556;
+    font-size: 15px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* PAGINA PROMOCIONES */
+
+.promociones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:#520556;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
