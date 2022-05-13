@@ -159,10 +159,16 @@ footer{
     font-weight: bold;
     color: white;
     background-color: #520556;
+    border-radius: 15px;
     font-size: 15px;
     width: 300px;
     margin-bottom: 30px;
 }
+
+button:hover {
+    transform: scale(1.2);
+}
+
 
 /* PAGINA PROMOCIONES  */
 
@@ -306,6 +312,8 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
 
 /* CELULAR */
 
