@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-.grid__conteiner{
+/* .grid__conteiner{
     display: grid;
     grid-template-rows: 0.25fr 2.5fr 0.75fr;
     grid-template-areas:
@@ -15,9 +15,9 @@
     "main main main"
     "footer footer footer";
     gap: 1rem;
-}
+} */
 
-header{
+/* header{
     grid-area: header;
     background-color: #CA431D;
     width: 100%;
@@ -26,9 +26,16 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+} */
+
+a {
+    color: #520556;
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-.header__logo {
+/* .header__logo {
     width: 10%;
     margin-left: 30px;
     margin-top: 15px;
@@ -57,7 +64,7 @@ a {
 .header__navegacion ul li a:hover {
     color: white;
 }
-
+ */
 main {
     grid-area: main;
     background-color: white;
@@ -177,7 +184,19 @@ button:hover {
 
 /* PAGINA PROMOCIONES  */
 
-.promociones{
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:#520556;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* .promociones {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -191,7 +210,7 @@ button:hover {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
+ */
 /* PAGINA NOSOTRAS */
 
 .nosotras{

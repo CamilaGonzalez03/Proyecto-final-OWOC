@@ -17,38 +17,61 @@
 <body class="grid__conteiner">
         <header>
             <a class="header__logo" href="../index.html"><img src="../recursos/Logo OWOC 200.png" alt="Logo"/></a>
-            <nav class="header__navegacion">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="promociones.html">Promociones</a></li>
-                    <li><a href="nosotras.html">Nosotras</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #CA431D;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../recursos/Logo OWOC 200.png" alt="Logo" width="100" height="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+
         </header>
         <main>
-            <section class="promociones">
-                <section>
-                    <img src="../recursos/promo mate 400.jpg" alt="Promo mate"/>
+            <section class="container">
+                <article class="row">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <img src="../recursos/promo mate 200.jpg" alt="Promo mate"/>
                     <p>Promo Mate</p>
                     <p>$$$$$$$</p>
                     <button class="boton">Añadir al carrito</button>
-                </section>
-                <section>
-                    <img src="../recursos/promo salado 400.jpg" alt="Promo Salado"/>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <img src="../recursos/promo salado 200.jpg" alt="Promo Salado"/>
                     <p>Promo salado</p>
                     <p>$$$$$$$</p>
                     <button  class="boton">Añadir al carrito</button>
-                </section>
-                <section>
-                    <img src="../recursos/promo semillas 400.jpg" alt="promo semillas"/>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <img src="../recursos/promo semillas 200.jpg" alt="promo semillas"/>
                     <p>Promo semillas</p>
                     <p>$$$$$$$</p>
                     <button  class="boton">Añadir al carrito</button>
-                </section>
-            </main>    
+                </div>
+                </article>
+            </section>
+        </main>    
             <footer>
                 <section class="footer__imagenes">
                     <img src="../recursos/favicon instagram-32x32.png" alt="Logo de Instagram"/>

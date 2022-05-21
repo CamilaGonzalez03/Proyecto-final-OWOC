@@ -2,47 +2,61 @@
   margin: 0;
   padding: 0; }
 
-.grid__conteiner {
-  display: grid;
-  grid-template-rows: 0.25fr 2.5fr 0.75fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  gap: 1rem; }
-
-header {
-  grid-area: header;
-  background-color: #CA431D;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.header__logo {
-  width: 10%;
-  margin-left: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.header__navegacion ul {
-  display: flex;
+/* .grid__conteiner{
+    display: grid;
+    grid-template-rows: 0.25fr 2.5fr 0.75fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    gap: 1rem;
+} */
+/* header{
+    grid-area: header;
+    background-color: #CA431D;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+a {
+  color: #520556;
   font-family: 'Square Peg', cursive;
   font-weight: bold;
-  font-size: 30px;
-  color: #520556;
-  list-style-type: none;
-  margin-right: 30px; }
+  font-size: 2rem; }
+
+/* .header__logo {
+    width: 10%;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header__navegacion ul {
+    display: flex;
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: #520556;
+    list-style-type: none;
+    margin-right: 30px;
+}
 
 li {
-  display: inline; }
+    display: inline;
+}
 
 a {
-  text-decoration: none;
-  padding: 15px; }
+    text-decoration: none;
+    padding: 15px;
+}
 
 .header__navegacion ul li a:hover {
-  color: white; }
-
+    color: white;
+}
+ */
 main {
   grid-area: main;
   background-color: white; }
@@ -145,20 +159,32 @@ button:hover {
   transition: all 1s; }
 
 /* PAGINA PROMOCIONES  */
-.promociones {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.container {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   color: #520556;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
 
+/* .promociones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:#520556;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+ */
 /* PAGINA NOSOTRAS */
 .nosotras {
   text-align: center;
