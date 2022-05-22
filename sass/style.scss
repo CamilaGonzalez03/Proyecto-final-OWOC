@@ -1,47 +1,41 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'botones';
+@import 'mediaqueries';
+@import 'productos';
 
 * {
     margin: 0;
     padding: 0;
 }
 
-a {
-    font-family: 'Square Peg', cursive;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #520556;
-}
-
 main {
-    grid-area: main;
-    background-color: white;
+    background-color: $color-main;
 }
 
 footer{
-    grid-area: footer;
-    background-color:#520556;
+    background-color:$color-footer;
     height: 200px;
 }
 
 .footer__imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-right: 2rem;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-right: 2rem;
+    }
 
 .footer__derechos{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    padding: 40px;
-}
+        font-family: $font-titulos;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
 
 /* INDEX */
 
@@ -49,54 +43,53 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: $color-main;
     padding-bottom: 20px;
     align-items: center;
+    &__titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-titulos;
+        font-size: 60px;
+        font-weight: bold;
+        color: $color-footer;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__subtitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $font-subtitulos;
+        font-size: 40px;
+        color: $color-navegacion;
+        padding: 40px;
+    }
+    &__imagen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center ;
+        margin-top: 20px;
+        border-radius: 100px;
+        padding-left: 20px;
+    }   
 }
 
-.presentacion__titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    color: #520556;
-    text-align: center;
-    margin-top: 20px;
-}
-    
-.presentacion__subtitulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Square Peg', cursive;
-    font-size: 40px;
-    color: #CA431D;
-    padding: 40px;
-}
 
-.presentacion__imagen {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center ;
-    margin-top: 20px;
-    border-radius: 100px;
-    padding-left: 20px;
-}
 
 /* PAGINA PRODUCTOS */
 
 .productos{
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-titulos;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    color:#520556;
+    color:$color-botones;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 25px;
@@ -106,10 +99,10 @@ footer{
 }
 
 .boton{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-titulos;
     font-weight: bold;
-    color: white;
-    background-color: #520556;
+    color: $color-main;
+    background-color: $color-botones;
     border-radius: 15px;
     font-size: 15px;
     width: 10rem;
@@ -119,18 +112,17 @@ footer{
 button:hover {
     transform: translate(0px, 0px) scale(1.1, 1.1);
     transition: all 1s;
-    
 }
 
 
 /* PAGINA PROMOCIONES  */
 
 .container {
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-titulos;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    color:#520556;
+    color:$color-footer;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -139,54 +131,47 @@ button:hover {
 
 .nosotras{
     text-align: center;
-    background-color: white;
+    background-color: $color-main;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
-}
-
-.nosotras__titulo{
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: #520556;
-    margin-top: 50px;
-    animation-duration: 5s;
-    animation-name: animacion_titulo;
-    animation-iteration-count: infinite;
-
-}
-
-@keyframes animacion_titulo {
-    0% {
-        transform: translate (0px, 0px) scale(1.3, 1.1);
+    &__titulo{
+        font-family: $font-titulos;
+        font-size: 50px;
+        font-weight: bold;
+        color: $color-footer;
+        margin-top: 50px;
+        animation-duration: 5s;
+        animation-name: animacion_titulo;
+        animation-iteration-count: infinite;
     }
-
-    50% {
-        transform: translate(0px, 0px) scale(1.4, 1.2);
+    @keyframes animacion_titulo {
+        0% {
+            transform: translate (0px, 0px) scale(1.3, 1.1);
+        }
+        50% {
+            transform: translate(0px, 0px) scale(1.4, 1.2);
+        }
+        100%{
+            transform: translate(0px, 0px) scale(1.5, 1.3);
+        }
     }
-
-    100%{
-        transform: translate(0px, 0px) scale(1.5, 1.3);
+    &__parrafo{
+        font-family: $font-subtitulos;
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-navegacion;
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
-}
-
-.nosotras__parrafo{
-    font-family: 'Square Peg', cursive;
-    font-size: 30px;
-    font-weight: bold;
-    color: #CA431D;
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.nosotras__imagen{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    &__imagen{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
 }
 
 /* PAGINA CONTACTO */
@@ -194,10 +179,10 @@ button:hover {
 .main__formulario{
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-titulos;
     text-align: center;
-    background-color:white;
-    border-color: #CA431D;
+    background-color:$color-main;
+    border-color: $color-navegacion;
     border-style:double;
     margin-left: 400px;
     margin-right: 400px;
@@ -209,14 +194,14 @@ button:hover {
 .main__titulo{
     font-size: 40px;
     font-weight: bold;
-    color: #520556;
+    color: $color-footer;
     padding: 10px;
     margin: 30px;
 }
 
 .main__formularioNombre{
-    font-family: 'Poppins', sans-serif;
-    color:black;
+    font-family: $font-titulos;
+    color: $color-formulario;
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 15px;
@@ -226,8 +211,8 @@ button:hover {
 }
 
 .main__formularioApellido{
-    font-family: 'Poppins', sans-serif;
-    color:black;
+    font-family: $font-titulos;
+    color:$color-formulario;
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 15px;
@@ -237,8 +222,8 @@ button:hover {
 }
 
 .main__formularioEmail{
-    font-family: 'Poppins', sans-serif;
-    color: black;
+    font-family: $font-titulos;
+    color: $color-formulario;
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 15px;
@@ -248,8 +233,8 @@ button:hover {
 }
 
 .main__formularioMensaje{
-    font-family: 'Poppins', sans-serif;
-    color:black;
+    font-family: $font-titulos;
+    color:$color-formulario;
     font-size: 20px;
     font-weight: 900;
     text-align: left;
@@ -260,10 +245,10 @@ button:hover {
 }
 
 .main__formilarioEnviar{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-titulos;
     font-size: 20px;
-    color: #EDEDED;
-    background-color: #520556;
+    color: $color-main;
+    background-color: $color-botones;
     text-align: center;
     font-weight: bold;
     padding-right: 15px;
@@ -271,62 +256,11 @@ button:hover {
 }
 
 .main__whatsapp{
-    font-family: 'Square Peg', cursive;
+    font-family: $font-subtitulos;
     font-size: 40px;
-    color:#CA431D;
+    color:$color-navegacion;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-
-
-/* CELULAR */
-
-@media (min-width: 320px) and (max-width: 540px) {
-
-        header {
-            flex-direction: column;
-        }
-    
-        ul {
-            flex-direction: column;
-        }
-    
-        section{
-            flex-direction: column;
-        }
-
-        .presentacion__imagen{
-            width: 250px;
-        }
-        
-        .nosotras__imagen{
-            width: 250px;
-        }
-    }
-
-
-@media (min-width: 541px) and (max-width: 720px) {
-
-    
-    header {
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-    }
-
-    section{
-        flex-direction: column;
-    }
-
-    .presentacion__imagen{
-        width: 250px;
-    }
-
-    .nosotras__imagen{
-        width: 250px;
-    }
-}
