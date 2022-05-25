@@ -3,8 +3,42 @@
 a {
   font-family: "Square Peg", cursive;
   font-weight: bold;
-  font-size: 2rem;
-  color: #520556; }
+  font-size: 2rem; }
+
+.navegacion__color {
+  background-color: #CA431D; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #520556;
+  height: 200px;
+  color: white; }
+  footer__imagenes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem; }
+  footer__derechos {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3rem; }
+
+.boton {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #700475;
+  border-radius: 15px;
+  font-size: 15px;
+  width: 10rem;
+  margin-bottom: 2rem; }
+  .boton:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+    transition: all 1s; }
 
 @media (min-width: 320px) and (max-width: 540px) {
   header {
@@ -37,25 +71,6 @@ a {
 main {
   background-color: white; }
 
-footer {
-  background-color: #520556;
-  height: 200px; }
-
-.footer__imagenes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 3rem;
-  padding-right: 2rem; }
-
-.footer__derechos {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  padding: 40px; }
-
 /* INDEX */
 .presentacion {
   display: flex;
@@ -63,7 +78,8 @@ footer {
   flex-wrap: wrap;
   background-color: white;
   padding-bottom: 20px;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .presentacion__titulo {
     display: flex;
     flex-direction: column;
@@ -86,7 +102,6 @@ footer {
   .presentacion__imagen {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     margin-top: 20px;
     border-radius: 100px;
@@ -106,20 +121,6 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px;
   justify-content: space-evenly; }
-
-.boton {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  color: white;
-  background-color: #700475;
-  border-radius: 15px;
-  font-size: 15px;
-  width: 10rem;
-  margin-bottom: 2rem; }
-
-button:hover {
-  transform: translate(0px, 0px) scale(1.1, 1.1);
-  transition: all 1s; }
 
 /* PAGINA PROMOCIONES  */
 .container {
@@ -149,14 +150,6 @@ button:hover {
     animation-duration: 5s;
     animation-name: animacion_titulo;
     animation-iteration-count: infinite; }
-
-@keyframes animacion_titulo {
-  0% {
-    transform: translate 0px, 0px scale(1.3, 1.1); }
-  50% {
-    transform: translate(0px, 0px) scale(1.4, 1.2); }
-  100% {
-    transform: translate(0px, 0px) scale(1.5, 1.3); } }
   .nosotras__parrafo {
     font-family: "Square Peg", cursive;
     font-size: 30px;

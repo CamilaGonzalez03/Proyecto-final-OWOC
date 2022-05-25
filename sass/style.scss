@@ -3,8 +3,6 @@
 @import 'footer';
 @import 'botones';
 @import 'mediaqueries';
-@import 'productos';
-
 * {
     margin: 0;
     padding: 0;
@@ -13,28 +11,6 @@
 main {
     background-color: $color-main;
 }
-
-footer{
-    background-color:$color-footer;
-    height: 200px;
-}
-
-.footer__imagenes{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 3rem;
-        padding-right: 2rem;
-    }
-
-.footer__derechos{
-        font-family: $font-titulos;
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
-        text-align: center;
-        padding: 40px;
-    }
 
 
 /* INDEX */
@@ -46,6 +22,7 @@ footer{
     background-color: $color-main;
     padding-bottom: 20px;
     align-items: center;
+    justify-content: center;
     &__titulo {
         display: flex;
         flex-direction: column;
@@ -70,8 +47,7 @@ footer{
     &__imagen {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center ;
+        justify-content: center;
         margin-top: 20px;
         border-radius: 100px;
         padding-left: 20px;
@@ -96,22 +72,6 @@ footer{
     padding-bottom: 25px;
     justify-content: space-evenly;
     
-}
-
-.boton{
-    font-family: $font-titulos;
-    font-weight: bold;
-    color: $color-main;
-    background-color: $color-botones;
-    border-radius: 15px;
-    font-size: 15px;
-    width: 10rem;
-    margin-bottom: 2rem;
-}
-
-button:hover {
-    transform: translate(0px, 0px) scale(1.1, 1.1);
-    transition: all 1s;
 }
 
 
@@ -147,17 +107,6 @@ button:hover {
         animation-name: animacion_titulo;
         animation-iteration-count: infinite;
     }
-    @keyframes animacion_titulo {
-        0% {
-            transform: translate (0px, 0px) scale(1.3, 1.1);
-        }
-        50% {
-            transform: translate(0px, 0px) scale(1.4, 1.2);
-        }
-        100%{
-            transform: translate(0px, 0px) scale(1.5, 1.3);
-        }
-    }
     &__parrafo{
         font-family: $font-subtitulos;
         font-size: 30px;
@@ -175,6 +124,7 @@ button:hover {
 }
 
 /* PAGINA CONTACTO */
+
 
 .main__formulario{
     display: flex;
@@ -263,4 +213,3 @@ button:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
