@@ -1,0 +1,31 @@
+
+.nosotras{
+    text-align: center;
+    background-color: $color-main;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    &__titulo{
+        font-family: $font-titulos;
+        font-size: 50px;
+        font-weight: bold;
+        color: $color-footer;
+        margin-top: 50px;
+    }
+    &__parrafo{
+        font-family: $font-subtitulos;
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-navegacion;
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    &__imagen{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $color-main;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    &__titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-titulos;
+        font-size: 60px;
+        font-weight: bold;
+        color: $color-footer;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__subtitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $font-subtitulos;
+        font-size: 40px;
+        color: $color-navegacion;
+        padding: 40px;
+    }
+    &__imagen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        border-radius: 100px;
+        padding-left: 20px;
+    }   
+}

@@ -1,0 +1,57 @@
+.main__formulario{
+    background-image: url("../recursos/Nueces.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+    .main__titulo{
+        font-family: $font-titulos;
+        font-weight: 900;
+        color: $color-footer;
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    #boton{
+        background-color: $color-botones;
+        color: $color-main;
+        padding: 10px;
+    }
+}
+
+.main__whatsapp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font-subtitulos;
+    font-size: 40px;
+    color: $color-navegacion;
+    padding: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 540px){
+    form{
+        width: 100%;
+    }
+}

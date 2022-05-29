@@ -1,0 +1,19 @@
+.productos__titulo{
+    text-align: center;
+    font-family: $font-titulos;
+    font-size: 50px;
+    font-weight: bold;
+    color: $color-botones;
+    margin-top: 50px;
+}
+
+.container__productos {
+    font-family: $font-titulos;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    color:$color-botones;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}

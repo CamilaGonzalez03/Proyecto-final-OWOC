@@ -64,14 +64,6 @@ footer {
   .nosotras__imagen {
     width: 250px; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-main {
-  background-color: white; }
-
-/* INDEX */
 .presentacion {
   display: flex;
   flex-direction: row;
@@ -107,32 +99,6 @@ main {
     border-radius: 100px;
     padding-left: 20px; }
 
-/* PAGINA PRODUCTOS */
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: #700475;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  justify-content: space-evenly; }
-
-/* PAGINA PROMOCIONES  */
-.container {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: #520556;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-/* PAGINA NOSOTRAS */
 .nosotras {
   text-align: center;
   background-color: white;
@@ -146,10 +112,7 @@ main {
     font-size: 50px;
     font-weight: bold;
     color: #520556;
-    margin-top: 50px;
-    animation-duration: 5s;
-    animation-name: animacion_titulo;
-    animation-iteration-count: infinite; }
+    margin-top: 50px; }
   .nosotras__parrafo {
     font-family: "Square Peg", cursive;
     font-size: 30px;
@@ -163,83 +126,94 @@ main {
     margin-bottom: 20px;
     border-radius: 20px; }
 
-/* PAGINA CONTACTO */
 .main__formulario {
-  display: flex;
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  background-color: white;
-  border-color: #CA431D;
-  border-style: double;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-bottom: 30px;
+  background-image: url("../recursos/Nueces.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
   margin-top: 20px;
-  padding-bottom: 30px; }
-
-.main__titulo {
-  font-size: 40px;
-  font-weight: bold;
-  color: #520556;
-  padding: 10px;
-  margin: 30px; }
-
-.main__formularioNombre {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 900;
-  margin-bottom: 15px;
-  padding-right: 30px;
-  padding-top: 10px;
-  width: 300px; }
-
-.main__formularioApellido {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 900;
-  margin-bottom: 15px;
-  padding-right: 30px;
-  padding-top: 10px;
-  width: 300px; }
-
-.main__formularioEmail {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 900;
-  margin-bottom: 15px;
-  padding-right: 30px;
-  padding-top: 5px;
-  width: 300px; }
-
-.main__formularioMensaje {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 900;
-  text-align: left;
-  margin-bottom: 15px;
-  padding-right: 30px;
-  padding-bottom: 120px;
-  width: 300px; }
-
-.main__formilarioEnviar {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: white;
-  background-color: #700475;
-  text-align: center;
-  font-weight: bold;
-  padding-right: 15px;
-  padding-left: 15px; }
+  border-radius: 20px; }
+  form .main__titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: #520556;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px; }
+  form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  form #boton {
+    background-color: #700475;
+    color: white;
+    padding: 10px; }
 
 .main__whatsapp {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   font-family: "Square Peg", cursive;
   font-size: 40px;
   color: #CA431D;
+  padding: 40px; }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  form {
+    width: 100%; } }
+
+.productos__titulo {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #700475;
+  margin-top: 50px; }
+
+.container__productos {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  color: #700475;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem; }
+
+.promociones__titulo {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #700475;
+  margin-top: 50px; }
+
+.container__promociones {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  color: #520556;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+main {
+  background-color: white; }
