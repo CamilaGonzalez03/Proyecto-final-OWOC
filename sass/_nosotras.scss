@@ -8,11 +8,7 @@
     background-size: cover;
     height: 800px;
     &__titulo{
-        font-family: $font-titulos;
-        font-size: 50px;
-        font-weight: bold;
-        color: $color-footer;
-        margin-top: 50px;
+        @include titulos;
     }
     &__parrafo{
         font-family: $font-subtitulos;

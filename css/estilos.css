@@ -6,7 +6,8 @@ a {
   font-size: 2rem; }
 
 .navegacion__color {
-  background-color: #CA431D; }
+  background-color: #CA431D;
+  color: #520556; }
 
 footer {
   display: flex;
@@ -108,10 +109,11 @@ footer {
   background-size: cover;
   height: 800px; }
   .nosotras__titulo {
+    text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     font-weight: bold;
-    color: #520556;
+    color: #700475;
     margin-top: 50px; }
   .nosotras__parrafo {
     font-family: "Square Peg", cursive;
@@ -140,13 +142,14 @@ form {
   margin-top: 20px;
   border-radius: 20px; }
   form .main__titulo {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    color: #520556;
     text-align: center;
-    margin: 0;
-    font-size: 30px;
-    margin-bottom: 20px; }
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #700475;
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 30px; }
   form input, form textarea {
     width: 100%;
     margin-bottom: 20px;
@@ -168,8 +171,10 @@ form {
   text-align: center;
   font-family: "Square Peg", cursive;
   font-size: 40px;
+  font-weight: 900;
+  background-color: white;
   color: #CA431D;
-  padding: 40px; }
+  padding: 30px; }
 
 @media (min-width: 320px) and (max-width: 540px) {
   form {

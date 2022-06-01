@@ -13,13 +13,9 @@ form{
     margin-top: 20px;
     border-radius: 20px;
     .main__titulo{
-        font-family: $font-titulos;
+        @include titulos;
         font-weight: 900;
-        color: $color-footer;
-        text-align: center;
-        margin: 0;
         font-size: 30px;
-        margin-bottom: 20px;
     }
     input, textarea{
         width: 100%;
@@ -46,8 +42,10 @@ form{
     text-align: center;
     font-family: $font-subtitulos;
     font-size: 40px;
+    font-weight: 900;
+    background-color: $color-main;
     color: $color-navegacion;
-    padding: 40px;
+    padding: 30px;
 }
 
 @media (min-width: 320px) and (max-width: 540px){

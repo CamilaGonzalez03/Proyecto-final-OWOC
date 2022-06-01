@@ -1,10 +1,5 @@
 .promociones__titulo{
-    text-align: center;
-    font-family: $font-titulos;
-    font-size: 50px;
-    font-weight: bold;
-    color: $color-botones;
-    margin-top: 50px;
+    @include titulos;
 }
 
 .container__promociones {
@@ -17,3 +12,4 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
+
