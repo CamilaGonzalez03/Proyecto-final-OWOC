@@ -1,5 +1,7 @@
-
 .nosotras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-color: $color-main;
     background-attachment: fixed;

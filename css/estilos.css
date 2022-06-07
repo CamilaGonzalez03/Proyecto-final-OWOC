@@ -101,6 +101,9 @@ footer {
     padding-left: 20px; }
 
 .nosotras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   background-color: white;
   background-attachment: fixed;
