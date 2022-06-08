@@ -36,3 +36,20 @@
         padding-left: 20px;
     }   
 }
+
+.desarrollo{
+    background-color: $color-main2;
+    padding: 20px;
+    margin-bottom: 0;
+    &__titulos{
+        font-family: $font-titulos;
+        font-weight: bold;
+        color: $color-footer;
+    }
+    &__parrafos{
+        font-family: $font-subtitulos;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+}
