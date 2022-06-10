@@ -3,11 +3,18 @@
 a {
   font-family: "Square Peg", cursive;
   font-weight: bold;
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #520556; }
 
 .navegacion__color {
-  background-color: #CA431D;
+  background-color: #CA431D; }
+
+.nav-item {
   color: #520556; }
+
+.dropdown-item {
+  background-color: #520556;
+  color: white; }
 
 footer {
   display: flex;
@@ -51,7 +58,8 @@ footer {
   .presentacion__imagen {
     width: 250px; }
   .nosotras__imagen {
-    width: 250px; } }
+    width: 250px;
+    margin-bottom: 20px; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
   header {
