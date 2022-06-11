@@ -58,8 +58,7 @@ footer {
   .presentacion__imagen {
     width: 250px; }
   .nosotras__imagen {
-    width: 250px;
-    margin-bottom: 20px; } }
+    width: 200px; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
   header {
@@ -128,11 +127,7 @@ footer {
   justify-content: center;
   text-align: center;
   background-color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px; }
+  margin: 20px; }
   .nosotras__titulo {
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -149,9 +144,7 @@ footer {
     padding-left: 50px;
     padding-right: 50px; }
   .nosotras__imagen {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px; }
+    border-radius: 30px; }
 
 .main__formulario {
   background-image: url("../recursos/Nueces.jpg");
