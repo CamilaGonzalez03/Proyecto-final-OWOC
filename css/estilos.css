@@ -24,6 +24,7 @@ footer {
   footer__imagenes {
     display: flex;
     flex-direction: row;
+    padding: 10px;
     margin-bottom: 3rem; }
   footer__derechos {
     font-family: "Poppins", sans-serif;
@@ -105,18 +106,40 @@ footer {
     padding-left: 20px; }
 
 .desarrollo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
   background-color: rgba(194, 115, 42, 0.795);
-  padding: 20px;
-  margin-bottom: 0; }
+  border-radius: 20px;
+  border: solid 5px #700475;
+  padding: 20px; }
   .desarrollo__titulos {
-    font-family: "Poppins", sans-serif;
+    font-family: "Square Peg", cursive;
     font-weight: bold;
     color: #520556; }
   .desarrollo__parrafos {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 15px; }
+
+.informacion {
+  background-color: rgba(194, 115, 42, 0.795);
+  border-radius: 20px;
+  border: solid 5px #700475;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .informacion__titulos {
     font-family: "Square Peg", cursive;
     font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 15px; }
+    color: #520556; }
+  .informacion__parrafos {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 18px; }
 
 .nosotras {
   display: flex;
