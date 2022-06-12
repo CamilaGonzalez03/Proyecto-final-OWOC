@@ -1,15 +1,12 @@
 /* COLORES */
 /* TIPOS DE LETRAS */
+.navegacion__color {
+  background-color: #CA431D; }
+
 a {
   font-family: "Square Peg", cursive;
   font-weight: bold;
   font-size: 2rem;
-  color: #520556; }
-
-.navegacion__color {
-  background-color: #CA431D; }
-
-.nav-item {
   color: #520556; }
 
 .dropdown-item {
@@ -216,6 +213,9 @@ form {
   margin-bottom: 2rem;
   padding-bottom: 2rem; }
 
+.row {
+  width: 100%; }
+
 .promociones__titulo {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -227,12 +227,15 @@ form {
 .container__promociones {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   color: #520556;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 2rem; }
+
+.row {
+  width: 100%; }
 
 * {
   margin: 0;
