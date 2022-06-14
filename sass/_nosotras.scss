@@ -4,7 +4,7 @@
     justify-content: center;
     text-align: center;
     background-color: $color-main;
-    margin: 20px;
+    margin: 1rem;
     &__titulo{
         @include titulos;
     }
@@ -13,9 +13,9 @@
         font-size: 30px;
         font-weight: bold;
         color: $color-navegacion;
-        margin-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     &__imagen{
         border-radius: 30px;

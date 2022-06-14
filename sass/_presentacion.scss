@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: $color-main;
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
     align-items: center;
     justify-content: center;
     &__titulo {
@@ -16,7 +16,7 @@
         font-weight: bold;
         color: $color-footer;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 1rem;
     }
     &__subtitulo {
         display: flex;
@@ -25,37 +25,35 @@
         font-family: $font-subtitulos;
         font-size: 40px;
         color: $color-navegacion;
-        padding: 40px;
+        padding: 2rem;
     }
     &__imagen {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 2rem;
         border-radius: 100px;
-        padding-left: 20px;
+        padding-left: 1rem;
     }   
 }
 
 .desarrollo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
     background-color: $color-main2;
     border-radius: 20px;
-    border: solid 5px $color-botones;
-    padding: 20px;
+    border: solid 5px $color-navegacion;
+    padding: 1rem;
+    margin: 1rem;
     &__titulos{
         font-family: $font-subtitulos;
         font-weight: bold;
-        color: $color-footer;
+        color: $color-navegacion;
     }
     &__parrafos{
         font-family: $font-titulos;
         font-weight: 900;
         font-size: 20px;
-        padding: 15px;
+        padding: 1rem;
     }
 }
 
@@ -65,8 +63,7 @@
     border-radius: 20px;
     border: solid 5px $color-botones;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 1rem;
     &__titulos{
         font-family: $font-subtitulos;
         font-weight: bold;
